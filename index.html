@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabian's Core values and industry Website </title>
+ 
+ <style>
+    body {
+      margin: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-color: #0f0f0f;
+      color: #333;
+    }
+
+    header {
+      background-color: #00a329;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #a5009d;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.75rem 0;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: #33be31;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgb(255, 251, 251);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #a5009d;
+      color: #15ff00;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Fabian's Personal Website</h1>
+    <p>Core Values & Industry Interests</p>
+  </header>
+
+  <nav>
+    <a href="index.html" onclick="showPage('values')">Core Values</a>
+    <a href="industry.html" onclick="showPage('industry')">Industry</a>
+  </nav>
+
+  <main class="container">
+
+    <!-- Page 1: Core Values -->
+     <div class="card">
+     <img src="images/Personal-Values.jpg" height="300px" width="400" style= "margin-left:230px"/> </div>
+
+    <section id="values" class="active">
+      <h2>My Personal Core Values</h2>
+
+      <div class="card">
+        <h3>Integrity</h3>
+        <p>
+         
+          Integrity is one of my top priorities that i value and try to keep with everyone in my day to day life.
+my family taught me to have integrity and to be honest and truthful.
+           Integrity is important because it is needed to keep trust between the customer and the company. 
+          Iif someone like a company doesnt have integrity and cant be honest with someone then people wont give you their trust.
+           The ability to hold yourself and other people accountable for any mess ups or falter is also extremely important and can show growth.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Creativity</h3>
+        <p>
+          I strive to use my mind and use my creativity to solve any issues or problems that could come up
+          I have always had a creative mind and developing it throughout life has helped me think out of the box.
+          Its important to use creativity because an idea you might think is wild could help develop a idea that could be acheivable and help solve an issue.
+          If you dont use creativity you cant be as helpful to solving issues that require fixing a problem the nontraditional way.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Responsibility</h3>
+        <p>
+          I will always take responsibility for any actions I do no matter the consequence.
+          Growing up you are supposed to understand that responsibility is something that you will have to take wether good or bad.
+          Responsibility is important to me because i know that if you cant take Responsibility you wont be trustworthy and reliable.
+         If you were to not take responsibility, you could have even worse consequence or maybe wont get praised for having integrity and being honest.
+         integrity and resposibility go hand in hand.
+
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Respect</h3>
+        <p>
+         I believe that respect and the act of simply listening to someone is one of the most important parts of life that people dont usually talk about.
+         Throughout my life respect was the main thing my father taught me to do for everyone.
+         its important to Respect someone because if they respect you back makes it easier to connect with someone even if you have different opinions.
+         if you dont show respect to someone, that could be a vital relationship you are losing just because you dont want to.
+        </p>
+      </div>
+    </section>
+
+    
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fabian Bellamy's ITEC Website</p>
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
